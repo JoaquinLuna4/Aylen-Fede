@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aylen & Fede</title>
+
+  <meta property="og:title" content="Aylen y Fede - Sabado, 19 Octubre">
+  <meta property="og:description" content="Aylen y Fede - Sabado, 19 Octubre">
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
+  <meta property="og:url" content="http://sherly.dae.ng/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+
+  <!-- Material Icons Google -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- Begin Script for Countdown -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23064379-20');
+  </script>
+  <!-- Begin Script for Countdown -->
+
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <!-- Begin Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/favicon.png" alt="Flower" />
+    </div>
+  </div>
+  <!-- End Preloader-->
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top bg-navbar">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Waktu">
+                Cuando es?
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#lokasi">
+                Ubicacion
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Tarjeta">
+                Tarjeta
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#rsvp">
+                Confirmacion de asistencia
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle">Nos casamos!</h1>
+          <h2 class="title">Aylen & Fede</h2>
+          <h4 class="subtitle tempatwaktu" style="font-size: 32px;">
+
+            </br>
+            <br>
+            </br>
+            <br>
+            Sabado, 19 Octubre
+            <br>
+
+            <a href="#rsvp" class="button has-tooltip btn-confirmar" data-tooltip="Add to Calendar" target="_blank"
+              data-aos="zoom-in">
+              &nbsp;&nbsp;Confirmar Asistencia
+            </a>
+            <div class="swipe-icon">
+              <span class="material-symbols-outlined icon-30px icono-titilando-brincando">
+                swipe_vertical
+              </span>
+            </div>
+
+          </h4>
+
+        </div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">Dias</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">Horas</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">Minutos</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">Segundos</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var harih = '10/19/2024 21:30:00';
+
+            $('#hitungmundur').countdown({
+              date: harih, // TODO Date format: 07/27/2017 17:00:00
+              offset: +7, // TODO Your Timezone Offset
+              day: 'Dia',
+              days: 'Dias'
+            }, function () {
+              alert('Done!');
+            });
+          </script>
+        </div>
+        <!-- End Countdown -->
+      </div>
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot ">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#Waktu">Cuando es?</a>
+                </li>
+                <li>
+                  <a href="#lokasi">Ubicacion</a>
+                </li>
+
+                <li>
+                  <a href="#Tarjeta">Tarjeta</a>
+                </li>
+
+                <li>
+                  <a href="#rsvp">Confirmacion de asistencia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
+
+  <!-- Begin Main Content -->
+  <div class="main-content">
+
+    <!-- Begin regular-section-->
+    <!-- <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+
+       
+       <span class="space40px"></span>
+       <span class="space40px"></span>
+       
+       <div data-aos="fade-up" data-aos-easing="linear">
+         <div class="nama-lengkap" >
+           Aylen  
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+            Fede
+          </div>
+          
+        </div>
+        <span class="space40px"></span>
+        
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+      </section> -->
+    <!-- End regular-section-->
+
+    <!-- Begin Waktu Section -->
+    <section class="section-light" id="Waktu">
+
+      <div class="container">
+        <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+          id="regular-section"></section>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Andabamos sin buscarnos
+          <br />
+          pero sabiendo que andabamos
+          <br>
+          para encontrarnos..
+        </p>
+
+    </section>
+
+    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+      <h1 class="title has-text-centered section-title">¿Cuando?</h1>
+    </div>
+    <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+      <div class="column is-6 has-vertically-aligned-content">
+
+        <p class="is-larger has-text-centered">
+        <div class="waktu tanggal-hari has-text-centered">Sabado</div>
+        <div class="waktu tanggal-angka has-text-centered">19</div>
+        <div class="waktu tanggal-bulan has-text-centered">Octubre 2024</div>
+        </p>
+
+      </div>
+      <div class="column is-6 has-vertically-aligned-content">
+
+        <p class="waktu is-larger has-text-centered">
+          <!-- Ceremonia Civil:
+          <br> -->
+        <p class="time">21:00 hs</p>
+        </p>
+
+      </div>
+
+      <!-- <div class="column is-4 has-vertically-aligned-content">
+              
+              <h1 class="waktu is-larger has-text-centered">
+                Al finalizar:
+                <br>
+                <strong>19.00  - 21.00 WIB</strong>
+              </h1>
+              
+              
+            </div> -->
+
+    </div>
+  </div>
+  <div class="space40px"></div>
+  <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+
+    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Casamiento+Aylen+y+Fede&details=El+S%C3%A1bado+6+Octubre+2024+12%3A30h+en%3A+Capilla+Nuestra+Se%C3%B1ora+Del+Valle.+%0ALuego+de+la+ceremonia+lo+celebraremos+en%3A+Sei+Fratelli%2C+%0ACamino+Colonia+Tirolesa%2C+esquina+Los+Viveros%2C+Barrio+Villa+Retiro.%0ARecord%C3%A1+confirmar+tu+asistencia+antes+del+20+de+marzo%21&location=Sei+Fratelli%2C+Camino+Colonia+Tirolesa%2C+esquina+Los+Viveros+Barrio+Villa+Retiro&dates=20240406T233000Z%2F20240407T080000Z"
+      target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank"
+      data-aos="zoom-in">
+      <i class="far fa-calendar-plus"></i>
+      &nbsp;&nbsp;Google Calendar
+    </a>
+  </div>
+  </section>
+  <!-- End Waktu Content -->
+
+  <!-- Begin Lokasi Section -->
+  <section class="section-darker" id="lokasi">
+    <!-- <div class="container">
+      <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+        <h1 class="title has-text-centered section-title">¿Donde?</h1>
+        <br>
+
+
+        <h1 class="tempat has-text-centered section-title">Ceremonia civil</h1>
+        <div class="section-icons">
+          <img src="./image/rings.svg" class="section-icons">
+        </div>
+        <p class="tempat is-larger has-text-centered">
+          <strong>Capilla Nuestra Señora Del Valle</strong>
+          <br>
+          Av. Dr. Arturo Capdevila, Villa Esquiú, Córdoba
+          <br>
+        </p>
+        <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+          <iframe width="100%" height="450" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_YZDXySEslhkyapITHAAVP8wLF_-I5Iw&q=Capilla Nuestra Señora Del Valle Villa Esquiú, Córdoba">
+          </iframe>
+        </div>
+        <div class="space40px"></div>
+        <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://www.google.com/maps/place/Capilla+Nuestra+Se%C3%B1ora+Del+Valle,+Av.+Dr.+Arturo+Capdevila,+Villa+Esqui%C3%BA,+C%C3%B3rdoba,+Argentina/@-31.355031,-64.105869,15z/data=!4m6!3m5!1s0x943297aa2f09e3f7:0x19e658b1b3942b2!8m2!3d-31.355031!4d-64.1058687!16s%2Fg%2F11c319dmm_?hl=es-419&gl=US"
+            class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <i class="far fa-directions"></i>
+            &nbsp;&nbsp;Google Maps
+          </a>
+        </div>
+      </div> -->
+
+
+
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+        <h2 class="tempat has-text-centered section-title">¡FIESTA!</h2>
+        <div class="section-icons">
+          <img src="./image/party.svg" class="section-icons">
+        </div>
+        <p class="tempat is-larger has-text-centered">
+          <strong>Casa Pueblo</strong>
+          <br>
+          Ingreso por primera entrada, E53 8 5km, Córdoba
+          <br>
+          <a href="https://www.saloncasapueblo.com.ar/images/plano-comollegar.jpg" class="button btn-cta"
+            target="_blank" data-aos="zoom-in">
+
+            &nbsp;&nbsp;¿Como llegar?
+          </a>
+        </p>
+      </div>
+
+      <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+        <iframe width="100%" height="450" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_YZDXySEslhkyapITHAAVP8wLF_-I5Iw&q= Casa Pueblo Camino Colonia Tirolesa,
+          esquina Los Viveros
+          Barrio Villa Retiro">
+        </iframe>
+      </div>
+      <div class="space40px"></div>
+      <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+        <a href="https://www.google.com.ar/maps/place/Sal%C3%B3n+Casapueblo/@-31.2673638,-64.2433993,17z/data=!3m1!4b1!4m6!3m5!1s0x94329b585d487abb:0x6c81a0ce900b466e!8m2!3d-31.2673684!4d-64.2408244!16s%2Fg%2F11r8pyyzq?entry=ttu"
+          class="button btn-cta" target="_blank" data-aos="zoom-in">
+          <i class="far fa-directions"></i>
+          &nbsp;&nbsp;Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="space40px"></div>
+  <div class="space40px"></div>
+  <div class="space40px"></div>
+
+  <section class="section-darker" id="Regalos">
+    <div class="container">
+      <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+        <h1 class="title has-text-centered section-title">Tarjeta</h1>
+        <br>
+
+
+
+        <h1 class="tempat has-text-centered section-title">Precios</h1>
+        <div class="section-icons">
+
+          <img src="./image/message.svg" class="section-icons">
+        </div>
+
+        <p class="tempat is-larger has-text-centered">
+          <strong>Hasta el 19/11</strong>
+        <p class="is-larger has-text-centered"> *Sujeto a actualizaciones </p>
+        <br>
+        <p class="tempat is-larger has-text-centered">
+
+          Adultos: <strong>$20.000 </strong>
+          <br>
+          2 a 5 años: <strong> $10.000</strong>
+          <br>
+        <p class="is-larger has-text-centered"> De 6 a 11 años abonan como adultos </p>
+        </p>
+        </p>
+
+        <div class="space40px"></div>
+
+      </div>
+
+
+
+      <div class="space40px"></div>
+
+      <div class="space40px"></div>
+
+
+    </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="section-darker" id="Regalos">
+    <div class="container">
+      <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+        <h1 class="title has-text-centered section-title">Regalos</h1>
+        <br>
+
+        <!-- <h1 class="tempat has-text-centered section-title">Precios</h1> -->
+        <div class="section-icons">
+          <img src="./image/gift.svg" class="section-icons">
+        </div>
+
+
+        <p class="tempat is-larger has-text-centered">
+          No queremos regalos pero nos gustaria si pudieran hacer alguna colaboracion en mi cuenta bancaria, tambien
+          habra una caja de manera anonima para entregar dinero en la fiesta-
+        </p>
+        <br>
+        <p class="tempat is-larger has-text-centered">
+
+          <img src="./image/bank.svg" class="has-text-centered">
+          <br>
+        <p class="has-text-centered">
+
+          <strong>
+            Federico Ariel Figueroa
+          </strong>
+          <br>
+        <div class="account-info">
+
+          <p>
+            <strong>Alias:</strong> fede.figueroa91
+          </p>
+          <br>
+          <p>
+            <strong> CBU:</strong> 4530000800015924668236
+          </p>
+          <br>
+          <p>
+            <strong> Banco:</strong> Naranja X
+          </p>
+
+          <br>
+          <p>
+            <strong> CUIT:</strong> 20-35967614-0
+          </p>
+        </div>
+
+        </p>
+
+        </p>
+
+        <div class="space40px"></div>
+
+      </div>
+
+
+
+      <div class="space40px"></div>
+
+      <div class="space40px"></div>
+
+
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- End Lokasi Content -->
+
+  <!-- Begin RSVP Content -->
+  <section class="section-dark contact m-4" id="rsvp">
+    <div class="container m-4">
+      <div class="columns is-multiline">
+        <div class="column is-12 prolog">
+          <h1 class="title section-title has-text-centered" style="margin-top: 25px;" data-aos="fade-up"
+            data-aos-easing="linear">CONFIRMACIÓN DE ASISTENCIA</h1>
+        </div>
+        <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <p class="h2 subtitle">
+            Te esperamos el
+            <br>
+            <strong>Sábado 19 Octubre 21:00h</strong>
+            <br>
+            En: <strong>Casa Pueblo</strong>, ingreso por primera entrada, E53 8 5km<br>
+            <br>
+            Recordá confirmar tu asistencia antes del
+            <br> <strong>6 de septiembre de 2024</strong>!
+            ¡Te esperamos!
+          </p>
+          <!-- <br>
+            <br>
+            Te invitamos a ¡Nuestra boda!
+            <br> -->
+          <br>
+          </p>
+
+          <a href="https://forms.gle/FsG3kB7cyxmaBswm7" class="button has-tooltip btn-cta"
+            data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            &nbsp;&nbsp;Confirmar Asistencia
+          </a>
+
+
+          <div class="space40px"></div>
+
+          <div class="space40px"></div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End RSVP Content -->
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
+        <p class="has-vertically-align">2023 &copy Aylen & Fede</p>
+      </a>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+  </script>
+
+  <!-- FIREBASE INTEGRATION -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDkY5ddC1_pstZc4_gpy6LjBEAOxzzR7mw",
+      authDomain: "AylenyFede.firebaseapp.com",
+      projectId: "AylenyFede",
+      storageBucket: "AylenyFede.appspot.com",
+      messagingSenderId: "642731403238",
+      appId: "1:642731403238:web:6b05578db3de96500cd827",
+      measurementId: "G-YP8QSWTTSN"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
+</html>
