@@ -49,7 +49,7 @@ html {
 
 .hero {
   background-image: url(../image/SolyMatias.jpeg);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/rings.jpeg") no-repeat;
+  /* background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/rings.jpeg") no-repeat; */
   background-attachment: fixed;
   background-size: cover;
   color: #663333;

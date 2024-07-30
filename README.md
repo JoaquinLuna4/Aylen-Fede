@@ -1,3 +1,5 @@
 # Aylen y Fede
 
-Deploy in: [text](https://aylen-fede.web.app/)
+- **Deploy in:** [Aylen y Fede](https://aylen-fede.web.app/)
+
+- **Github repository:** [ Github](https://github.com/JoaquinLuna4/Aylen-Fede/)
